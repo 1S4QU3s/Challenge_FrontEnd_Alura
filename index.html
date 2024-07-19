@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia de Texto</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <h1 class="animated-title">DECODIFICADOR<strong></strong></h1>
+            <textarea id="inputText" placeholder="Digite um texto que você deseja criptografar ou descriptografar."></textarea>
+            <div id="notificationBox" class="notification-box">
+                <img src="./assets/alert.png" alt="Alerta" class="alert-image">    
+                Apenas letras minúsculas e sem caracteres especiais</div>
+            <div id="alertBox" class="alert-box" style="display: none;">
+                Apenas letras minúsculas e sem caracteres 
+                <span id="closeAlertBox">&times;</span>
+            </div>
+            <div class="buttons">
+                <button id="encryptBtn">Criptografar</button>
+                <button id="decryptBtn">Descriptografar</button>
+            </div>
+        </div>
+        <div class="output-section" id="outputSection">
+            <img src="./assets/detetive.png" alt="Detetive" id="detetiveImage">
+            <textarea id="outputText" readonly></textarea>
+            <div class="output-buttons">
+                <button id="copyBtn">Copiar Texto</button>
+                <button id="resetBtn">Resetar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Desenvolvido por Isaque de Oliveira Silva em 17/07/2024</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
